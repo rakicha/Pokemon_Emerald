@@ -5,13 +5,13 @@
 #define POKEMON_NAME_LENGTH 12
 
 #undef P_MEGA_EVOLUTIONS
-#define P_MEGA_EVOLUTIONS                TRUE
+#define P_MEGA_EVOLUTIONS                FALSE
 #undef P_PRIMAL_REVERSIONS
 #define P_PRIMAL_REVERSIONS              TRUE
 #undef P_ULTRA_BURST_FORMS
 #define P_ULTRA_BURST_FORMS              TRUE
 #undef P_GIGANTAMAX_FORMS
-#define P_GIGANTAMAX_FORMS               TRUE
+#define P_GIGANTAMAX_FORMS               FALSE
 #undef P_TERA_FORMS
 #define P_TERA_FORMS                     TRUE
 #undef P_FUSION_FORMS
@@ -25,11 +25,11 @@
 #undef P_PALDEAN_FORMS
 #define P_PALDEAN_FORMS                  TRUE
 #undef P_PIKACHU_EXTRA_FORMS
-#define P_PIKACHU_EXTRA_FORMS            TRUE
+#define P_PIKACHU_EXTRA_FORMS            FALSE
 #undef P_COSPLAY_PIKACHU_FORMS
-#define P_COSPLAY_PIKACHU_FORMS          TRUE
+#define P_COSPLAY_PIKACHU_FORMS          FALSE
 #undef P_CAP_PIKACHU_FORMS
-#define P_CAP_PIKACHU_FORMS              TRUE
+#define P_CAP_PIKACHU_FORMS              FALSE
 #undef P_GEN_2_CROSS_EVOS
 #define P_GEN_2_CROSS_EVOS               TRUE
 #undef P_GEN_3_CROSS_EVOS
