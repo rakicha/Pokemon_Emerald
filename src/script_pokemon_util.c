@@ -430,7 +430,7 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, u
     SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
     SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
 
-    if (slot < PARTY_SIZE)
+    if (slot < PARTY_SIZE - 2)
     {
         if (side == 0)
             CopyMon(&gPlayerParty[slot], &mon, sizeof(struct Pokemon));
@@ -441,12 +441,12 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, u
     else
     {
         // find empty party slot to decide whether the Pokémon goes to the Player's party or the storage system.
-        for (i = 0; i < PARTY_SIZE; i++)
+        for (i = 0; i < PARTY_SIZE - 2; i++)
         {
             if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == SPECIES_NONE)
                 break;
         }
-        if (i >= PARTY_SIZE)
+        if (i >= PARTY_SIZE - 2)
         {
             sentToPc = CopyMonToPC(&mon);
         }
