@@ -656,12 +656,12 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
+#define FLAG_UNUSED_0x264  0x264 // EXP_SHARE
+#define FLAG_UNUSED_0x265  0x265 // SMART_WILD_AI_FLAG
+#define FLAG_UNUSED_0x266  0x266 // AI_VS_AI_BATTLE
+#define FLAG_UNUSED_0x267  0x267 // NO_ENCOUNTER
+#define FLAG_UNUSED_0x268  0x268 // NO_TRAINER_SEE
+#define FLAG_UNUSED_0x269  0x269 // NO_COLLISION
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
