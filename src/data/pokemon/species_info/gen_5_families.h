@@ -647,8 +647,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sDewottLevelUpLearnset,
         .teachableLearnset = sDewottTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT},
-                                {EVO_NONE, 0, SPECIES_SAMUROTT_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 36, SPECIES_SAMUROTT},
+                                {EVO_LEVEL_NIGHT, 36, SPECIES_SAMUROTT_HISUI}),
     },
 
     [SPECIES_SAMUROTT] =
@@ -4102,7 +4102,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sPetililTeachableLearnset,
         .eggMoveLearnset = sPetililEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT},
-                                {EVO_NONE, 0, SPECIES_LILLIGANT_HISUI}),
+                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_LILLIGANT_HISUI}),
     },
 
     [SPECIES_LILLIGANT] =
@@ -4309,6 +4309,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sBasculinTeachableLearnset,
         .eggMoveLearnset = sBasculinEggMoveLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_RECOIL_DAMAGE_MALE, 294, SPECIES_BASCULEGION_M},
+                                {EVO_RECOIL_DAMAGE_FEMALE, 294, SPECIES_BASCULEGION_F}),
     },
 
     [SPECIES_BASCULIN_BLUE_STRIPED] =
@@ -4375,6 +4377,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sBasculinTeachableLearnset,
         .eggMoveLearnset = sBasculinEggMoveLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_RECOIL_DAMAGE_MALE, 294, SPECIES_BASCULEGION_M},
+                                {EVO_RECOIL_DAMAGE_FEMALE, 294, SPECIES_BASCULEGION_F}),
     },
 
 #if P_HISUIAN_FORMS
@@ -8436,6 +8440,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sAmoongussLevelUpLearnset,
         .teachableLearnset = sAmoongussTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP_NIGHT, 0, SPECIES_BRUTE_BONNET}),
     },
 #endif //P_FAMILY_FOONGUS
 
@@ -11156,8 +11161,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sRuffletLevelUpLearnset,
         .teachableLearnset = sRuffletTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_BRAVIARY},
-                                {EVO_NONE, 0, SPECIES_BRAVIARY_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 54, SPECIES_BRAVIARY},
+                                {EVO_LEVEL_NIGHT, 54, SPECIES_BRAVIARY_HISUI}),
     },
 
     [SPECIES_BRAVIARY] =
@@ -11714,7 +11719,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sZweilousLevelUpLearnset,
         .teachableLearnset = sZweilousTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 64, SPECIES_HYDREIGON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 64, SPECIES_HYDREIGON},
+                                {EVO_FRIENDSHIP, 0, SPECIES_IRON_JUGULIS}),
     },
 
     [SPECIES_HYDREIGON] =
@@ -11864,7 +11870,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sLarvestaLevelUpLearnset,
         .teachableLearnset = sLarvestaTeachableLearnset,
         .eggMoveLearnset = sLarvestaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 59, SPECIES_VOLCARONA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 59, SPECIES_VOLCARONA},
+                                {EVO_FRIENDSHIP_DAY, 0, SPECIES_SLITHER_WING},
+                                {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_IRON_MOTH}),
     },
 
     [SPECIES_VOLCARONA] =

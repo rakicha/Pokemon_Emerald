@@ -2816,6 +2816,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPichuTeachableLearnset,
         .eggMoveLearnset = sPichuEggMoveLearnset,
         .formSpeciesIdTable = sPichuFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_PIKACHU}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -2910,7 +2911,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_NONE, 0, SPECIES_RAICHU_ALOLA}),
+                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_RAICHU_ALOLA}),
     },
 
 #if P_COSPLAY_PIKACHU_FORMS
@@ -5369,7 +5370,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sJigglypuffLevelUpLearnset,
         .teachableLearnset = sJigglypuffTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_WIGGLYTUFF}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_WIGGLYTUFF},
+                                {EVO_FRIENDSHIP_MOVE_TYPE, TYPE_PSYCHIC, SPECIES_SCREAM_TAIL}),
     },
 
     [SPECIES_WIGGLYTUFF] =
@@ -10445,7 +10447,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMagnetonLevelUpLearnset,
         .teachableLearnset = sMagnetonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MAPSEC, MAPSEC_NEW_MAUVILLE, SPECIES_MAGNEZONE},
-                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_MAGNEZONE}),
+                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_MAGNEZONE},
+                                {EVO_FRIENDSHIP, 0, SPECIES_SANDY_SHOCKS}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -10614,6 +10617,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sFarfetchdTeachableLearnset,
         .eggMoveLearnset = sFarfetchdEggMoveLearnset,
         .formSpeciesIdTable = sFarfetchdFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_CRITICAL_HITS, 3, SPECIES_SIRFETCHD}),
     },
 
 #if P_GALARIAN_FORMS
@@ -12806,7 +12810,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sExeggcuteTeachableLearnset,
         .eggMoveLearnset = sExeggcuteEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR},
-                                {EVO_NONE, 0, SPECIES_EXEGGUTOR_ALOLA}),
+                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_EXEGGUTOR_ALOLA}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_7
@@ -13023,8 +13027,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sCuboneLevelUpLearnset,
         .teachableLearnset = sCuboneTeachableLearnset,
         .eggMoveLearnset = sCuboneEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK},
-                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA},
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 28, SPECIES_MAROWAK},
+                                {EVO_LEVEL_NIGHT, 28, SPECIES_MAROWAK_ALOLA},
                                 {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA_TOTEM}),
     },
 
@@ -13744,8 +13748,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sKoffingLevelUpLearnset,
         .teachableLearnset = sKoffingTeachableLearnset,
         .eggMoveLearnset = sKoffingEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING},
-                                {EVO_NONE, 0, SPECIES_WEEZING_GALAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 35, SPECIES_WEEZING},
+                                {EVO_LEVEL_NIGHT, 35, SPECIES_WEEZING_GALAR}),
     },
 
     [SPECIES_WEEZING] =
@@ -15289,8 +15293,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMimeJrLevelUpLearnset,
         .teachableLearnset = sMimeJrTeachableLearnset,
         .eggMoveLearnset = sMimeJrEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_MR_MIME},
-                                {EVO_NONE, 0, SPECIES_MR_MIME_GALAR}),
+        .evolutions = EVOLUTION({EVO_MOVE, MOVE_REFLECT, SPECIES_MR_MIME},
+                                {EVO_MOVE, MOVE_LIGHT_SCREEN, SPECIES_MR_MIME_GALAR}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -15367,6 +15371,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sMrMimeTeachableLearnset,
         .eggMoveLearnset = sMrMimeEggMoveLearnset,
         .formSpeciesIdTable = sMrMimeFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_MR_RIME}),
     },
 
 #if P_GALARIAN_FORMS

@@ -577,7 +577,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_PROTEAN },
+        .abilities = { ABILITY_TORRENT, ABILITY_BATTLE_BOND, ABILITY_PROTEAN },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
         .speciesName = _("Greninja"),
@@ -4302,6 +4302,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sCarbinkLevelUpLearnset,
         .teachableLearnset = sCarbinkTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_DIANCIE}),
     },
 #endif //P_FAMILY_CARBINK
 
@@ -4372,8 +4373,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sGoomyLevelUpLearnset,
         .teachableLearnset = sGoomyTeachableLearnset,
         .eggMoveLearnset = sGoomyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SLIGGOO},
-                                {EVO_NONE, 0, SPECIES_SLIGGOO_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 40, SPECIES_SLIGGOO},
+                                {EVO_LEVEL_NIGHT, 40, SPECIES_SLIGGOO_HISUI}),
     },
 
     [SPECIES_SLIGGOO] =
@@ -5460,8 +5461,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sBergmiteLevelUpLearnset,
         .teachableLearnset = sBergmiteTeachableLearnset,
         .eggMoveLearnset = sBergmiteEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_AVALUGG},
-                                {EVO_NONE, 0, SPECIES_AVALUGG_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 37, SPECIES_AVALUGG},
+                                {EVO_LEVEL_NIGHT, 37, SPECIES_AVALUGG_HISUI}),
     },
 
     [SPECIES_AVALUGG] =

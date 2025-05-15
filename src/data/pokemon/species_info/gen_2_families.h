@@ -359,8 +359,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 36, SPECIES_TYPHLOSION},
+                                {EVO_LEVEL_NIGHT, 36, SPECIES_TYPHLOSION_HISUI}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -3846,6 +3846,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sMismagiusLevelUpLearnset,
         .teachableLearnset = sMismagiusTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP_MOVE_TYPE, TYPE_FAIRY, SPECIES_FLUTTER_MANE}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_MISDREAVUS
@@ -4983,6 +4984,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sQwilfishTeachableLearnset,
         .eggMoveLearnset = sQwilfishEggMoveLearnset,
         .formSpeciesIdTable = sQwilfishFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_MOVE, MOVE_POISON_JAB, SPECIES_OVERQWIL}),
     },
 
 #if P_HISUIAN_FORMS
@@ -5820,8 +5822,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sUrsaringLevelUpLearnset,
         .teachableLearnset = sUrsaringTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM_NIGHT, ITEM_PEAT_BLOCK, SPECIES_URSALUNA},
-                                {EVO_NONE, 0, SPECIES_URSALUNA_BLOODMOON}),
+        .evolutions = EVOLUTION({EVO_ITEM_NIGHT, ITEM_TART_APPLE, SPECIES_URSALUNA},
+                                {EVO_ITEM_NIGHT, ITEM_SWEET_APPLE, SPECIES_URSALUNA_BLOODMOON}),
     },
 
 #if P_GEN_8_CROSS_EVOS
@@ -6417,6 +6419,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sCorsolaTeachableLearnset,
         .eggMoveLearnset = sCorsolaEggMoveLearnset,
         .formSpeciesIdTable = sCorsolaFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_CURSOLA}),
     },
 
 #if P_GALARIAN_FORMS
@@ -6775,6 +6778,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sDelibirdLevelUpLearnset,
         .teachableLearnset = sDelibirdTeachableLearnset,
         .eggMoveLearnset = sDelibirdEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP_MOVE_TYPE, TYPE_WATER, SPECIES_IRON_BUNDLE}),
     },
 #endif //P_FAMILY_DELIBIRD
 
@@ -7363,6 +7367,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sDonphanLevelUpLearnset,
         .teachableLearnset = sDonphanTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_GREAT_TUSK},
+                                {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_IRON_TREADS}),
     },
 #endif //P_FAMILY_PHANPY
 
@@ -8026,7 +8032,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sPupitarLevelUpLearnset,
         .teachableLearnset = sPupitarTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_TYRANITAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_TYRANITAR},
+                                {EVO_FRIENDSHIP, 0, SPECIES_IRON_THORNS}),
     },
 
     [SPECIES_TYRANITAR] =

@@ -2766,7 +2766,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sKirliaLevelUpLearnset,
         .teachableLearnset = sKirliaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR},
-                                {EVO_ITEM_MALE, ITEM_DAWN_STONE, SPECIES_GALLADE}),
+                                {EVO_ITEM_MALE, ITEM_DAWN_STONE, SPECIES_GALLADE},
+                                {EVO_FRIENDSHIP, 0, SPECIES_IRON_VALIANT}),
     },
 
     [SPECIES_GARDEVOIR] =
@@ -4180,6 +4181,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sHariyamaLevelUpLearnset,
         .teachableLearnset = sHariyamaTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP_MOVE_TYPE, TYPE_ELECTRIC, SPECIES_IRON_HANDS}),
     },
 #endif //P_FAMILY_MAKUHITA
 
@@ -11282,7 +11284,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sShelgonLevelUpLearnset,
         .teachableLearnset = sShelgonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_SALAMENCE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_SALAMENCE},
+                                {EVO_FRIENDSHIP_MOVE_TYPE, TYPE_DARK, SPECIES_ROARING_MOON}),
     },
 
     [SPECIES_SALAMENCE] =

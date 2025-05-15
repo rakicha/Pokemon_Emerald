@@ -4354,6 +4354,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sCyclizarLevelUpLearnset,
         .teachableLearnset = sCyclizarTeachableLearnset,
         .eggMoveLearnset = sCyclizarEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 55, SPECIES_KORAIDON},
+                                {EVO_LEVEL_NIGHT, 55, SPECIES_MIRAIDON}),
     },
 #endif //P_FAMILY_CYCLIZAR
 
